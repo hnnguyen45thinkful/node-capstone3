@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Profile | Node-Auth</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/public/css/main.css" >
+	</head>
+	
+	<body>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+				
+					<h1 id="main-title">Profile Page</h1>
+				
+					<hr>
+					
+					<p><strong>id</strong><br/><%= user._id %></p>
+					
+					<p><strong>email</strong><br/><%= user.local.email %></p>
+					
+					<p><strong>password</strong><br/><%= user.local.password %></p>
+				
+					<a href="/logout" class="main-butt">Logout</a>
+				
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

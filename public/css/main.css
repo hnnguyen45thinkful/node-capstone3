@@ -1,0 +1,35 @@
+/* Main CSS */
+
+/* Text/Titles */
+#main-title {
+	font-weight: bold;
+	text-align: center;
+}
+
+#main-logsign {
+	text-align: center;
+}
+
+/* Buttons */
+#main-butts{
+text-align: center;
+}
+
+.main-butt {
+	display: inline-block;
+	background-color: red;
+	border: 2px solid red;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: white;
+	font-weight:bold;
+	margin-right: 5px;
+}
+
+.main-butt:hover {
+	background-color: white;
+	border: 2px solid red;
+	text-decoration: none;
+	color: red;
+	font-weight:bold;
+}
