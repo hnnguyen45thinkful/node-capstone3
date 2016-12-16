@@ -12,4 +12,4 @@ Main Changes Made
 - Login failure message made more ambiguious 'Email or Password Incorrect'
 - Issue with req.logout - changed to req.session.destroy()
 - /app/models/user.js deleted facebook/twitter/google in schema
-- Added 404 page and route
+- Added 404 page and route# node-capstone3
