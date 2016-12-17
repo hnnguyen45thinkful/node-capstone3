@@ -1,10 +1,10 @@
-
+//Created and edited by Hieu Nguyen
 // Initial Setup
 // Main App Variables/Requirements
 var express 			= require('express');
 var app 					= express();
 var configApp			= require('./config/app-config.js');
-var port 					= process.env.PORT || 8080;
+var port 					= process.env.PORT || 8080; //changed port to 8080.
 var mongoose			= require('mongoose');
 var passport 			= require('passport');
 var flash 				= require('connect-flash');
