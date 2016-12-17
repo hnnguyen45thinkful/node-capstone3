@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Profile | Node-Auth</title>
+		<title>Profile | Budget Recorder Tracker</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/public/css/main.css" >
 	</head>
@@ -13,20 +13,57 @@
 				<div class="col-md-6 col-md-offset-3">
 				
 					<h1 id="main-title">Profile Page</h1>
-				
+					 <!-- the user name -->
+  					<h1>Hello <%= user.email %>!</h1>
 					<hr>
-					
-					<p><strong>id</strong><br/><%= user._id %></p>
-					
-					<p><strong>email</strong><br/><%= user.local.email %></p>
-					
-					<p><strong>password</strong><br/><%= user.local.password %></p>
 				
 					<a href="/logout" class="main-butt">Logout</a>
-				
 				</div>
 			</div>
 		</div>
+	<!--Creating the home page part -->
+<section id='main-page'>
+	<div id='header'>
+		<h1>BUDGET RECORDER TRACKER</h1>
+			<div id="search-container"> 
+				<div class="title">Look up a previous list</div>
+					<input type="text" placeholder="get saved list name" id="search">
+						<input type="submit" value=" get " id="get-category">
+			</div><br>
+	</div>
+	<!--Describing the instruction on how to keep track of your money and know expenses. -->
+	<div id = 'top'>
+		<div>First, you need to create a name for your budget list bill(s). Next, then enter something you recently purchased anywhere in the first box. Then, in the second item box, enter the amount you paid when you brought it anywhere. This is going to display how much money in the past and compare how much are you are going to spend again in months or years. 
+		</div><br>
+		<!-- form -->
+			<div class="title">Name a category name below (i.e. bills, sales, etc.)</div>
+			<input type='text' placeholder="Category Name" id="listName">
+			<input type='submit' value="Save" id="save"><p>
+			<div id="cat-container"></div><p>
 
+			<div class="title">Enter information below</div>
+				<input type="text" placeholder="What I bought" id="item-bought">
+				<input type="text" placeholder="What I paid for it" id="price-paid">
+				<input type="submit" value=" Add " id="add-to-list">
+	</div>
+	<br>
+	<!-- output page -->
+	<div id = 'middle'>
+		<div id="name">  
+			<input type="submit" value="delete list" id="delete-category"></div>
+				<div id='truevalue'>What You Really Paid for Last time and/or Year before. </div>
+					<div id="item"></div>
+						
+				
+	</div>
+	<!-- Creating the bottom part to show the history -->
+	<div id='bottom'><br>
+	<!--Creating the clear button with the delete list to update or clear previous years same from above.-->
+	<input type="submit" value="clear-all" id="clear">
+	</div>
+	<div id='foot'><input type='text' placeholder='text' id='clickable'></div>
+	<div id='foot2' contenteditable="true"></div>
+	<div id='footer'></div>
+</section>
 	</body>
 </html>
