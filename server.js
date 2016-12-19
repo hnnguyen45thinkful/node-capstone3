@@ -52,6 +52,8 @@ app.set('view engine', 'ejs');
 require('./app/routes.js')(app, passport);
 
 // start application on localhost and port set in /config/app-config.js
-app.listen(port, 'localhost', function(){
-	console.log("Server running at localhost:" + port + "/");
+app.listen(process.env.PORT || 8080, function() {
+    console.log("The server is running at http://localhost:" + port);
 });
+
+exports.app = app;
