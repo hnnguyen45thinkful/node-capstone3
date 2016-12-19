@@ -1,6 +1,10 @@
 {
-  "name": "node-authentication",
+  "name": "node-capstone3",
   "main": "server.js",
+    "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
@@ -15,5 +19,10 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.0.2"
   }
 }
