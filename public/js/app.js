@@ -1,7 +1,6 @@
 //model
 var cachedItems = [];
 var List = {};
-var averageTwentyReturn = 4.42;
 var existingList = false;
 var clearModels = function(){
     cachedItems.length = 0;
