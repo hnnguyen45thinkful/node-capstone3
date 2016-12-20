@@ -1,5 +1,5 @@
 {
-  "name": "node-capstone3",
+  "name": "budget",
   "main": "server.js",
     "scripts": {
     "test": "mocha",
